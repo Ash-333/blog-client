@@ -15,6 +15,12 @@ import store from "./store/app.js";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import EditBlog from "./pages/EditBlog.jsx";
 
+//CRUD
+//C->Create
+//R->Read
+//U->Update
+//D->Delete
+
 const router = createBrowserRouter([
   {
     path: "/",

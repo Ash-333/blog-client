@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000"; 
+const API_URL = "https://blog-backend-plum-five.vercel.app/";
 
 // Create an Axios instance
 const api = axios.create({
@@ -66,7 +66,7 @@ export const createPost = async (postData) => {
 };
 
 export const updatePost = async (id, postData) => {
-  console.log(postData,id)
+  console.log(postData, id);
   return api.put(`/api/blog/${id}`, postData);
 };
 
